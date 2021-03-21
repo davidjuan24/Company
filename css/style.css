@@ -189,10 +189,4 @@
                 font-size: 16px;
                 text-align: center;
             }
-        }
-        
-        @media(max-width:879px) {
-            .slider {
-                display: none;
-            }
-        }
+       }
