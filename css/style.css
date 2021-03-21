@@ -1,0 +1,198 @@
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            overflow-x: hidden;
+            margin: auto;
+        }
+        /*slider*/
+        
+        .slider {
+            margin: auto;
+            width: 100%;
+        }
+        
+        .slider ul {
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: cambio 17s infinite alternate;
+        }
+        
+        .slider li {
+            width: 100%;
+            list-style: none;
+        }
+        
+        .slider li img {
+            width: 100%;
+        }
+        
+        @keyframes cambio {
+            0% {
+                margin-left: 0;
+            }
+            20% {
+                margin-left: 0;
+            }
+            25% {
+                margin-left: -100%;
+            }
+            45% {
+                margin-left: -100%;
+            }
+            50% {
+                margin-left: -200%;
+            }
+            70% {
+                margin-left: -200%;
+            }
+            75% {
+                margin-left: -300%;
+            }
+            100% {
+                margin-left: -300%;
+            }
+        }
+        /*menu de arriba*/
+        
+        .main-inicio {
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #FF0000;
+        }
+        
+        p {
+            color: #00e000;
+        }
+        
+        .container-menu {
+            width: 100%;
+            margin: 10px;
+        }
+        
+        .container-menu ul {
+            list-style: none;
+            background: #000;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .container-menu li {
+            display: inline-block;
+            font-size: 18.5px;
+            font-weight: bolder;
+        }
+        
+        .container-menu li a {
+            text-decoration: none;
+            color: #00e000;
+            padding: 5px;
+            width: 100px;
+        }
+        
+        .container-menu li a:hover {
+            color: #fff;
+            border-bottom: 3px solid;
+            cursor: pointer;
+        }
+        /*imagenes cmatrix termux*/
+        
+        .matrix #cmatrix {
+            width: 350px;
+            height: 650px;
+        }
+        
+        .matrix #matrixx {
+            width: 650px;
+            height: 350px;
+        }
+        
+        .matrix img {
+            display: inline-block;
+        }
+        /*imagenes para el responsive design*/
+        
+        .container-menu label img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        #check {
+            display: none;
+        }
+        
+        aside {
+            color: #e00000;
+            text-align: center;
+        }
+        
+        @media(max-width:1152px) {
+            .container-menu ul li a {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: none;
+                font-size: 15px;
+            }
+            .main-inicio {
+                font-size: 20px;
+            }
+            aside {
+                color: #e00000;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        
+        @media(max-width:877px) {
+            body {
+                font-size: 20px;
+            }
+            .container-menu label img {
+                display: block;
+            }
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #000;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .container-menu ul li {
+                display: block;
+                margin: 30px 0;
+                line-height: 30px;
+            }
+            .container-menu ul li a {
+                font-size: 20px;
+            }
+            #check:checked~ul {
+                left: 0;
+            }
+            .main-inicio {
+                font-size: 14px;
+            }
+            aside {
+                color: #e00000;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+        
+        @media(max-width:879px) {
+            .slider {
+                display: none;
+            }
+        }
